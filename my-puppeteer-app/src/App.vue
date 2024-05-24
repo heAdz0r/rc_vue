@@ -1,27 +1,24 @@
 <template>
-  <div id="app">
-    <FetchData />
-  </div>
+  <v-app>
+    <v-main>
+      <v-container>
+        <DataTable />
+      </v-container>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import FetchData from './components/FetchData.vue';
+import DataTable from './components/DataTable.vue';
 
 export default {
   name: 'App',
   components: {
-    FetchData
-  }
+    DataTable,
+  },
 };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import '~vuetify/dist/vuetify.min.css';
 </style>
